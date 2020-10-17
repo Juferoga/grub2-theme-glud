@@ -1,70 +1,63 @@
 ```
-  ____ ____  _   _ ____ ____    _____ _   _ _____ __  __ _____ ____
- / ___|  _ \| | | | __ )___ \  |_   _| | | | ____|  \/  | ____/ ___|
-| |  _| |_) | | | |  _ \ __) |   | | | |_| |  _| | |\/| |  _| \___ \
-| |_| |  _ <| |_| | |_) / __/    | | |  _  | |___| |  | | |___ ___) |
- \____|_| \_\\___/|____/_____|   |_| |_| |_|_____|_|  |_|_____|____/
+     _____ ______ _   _______   _____  _     _   _______ 
+    |  __ \| ___ \ | | | ___ \ |  __ \| |   | | | |  _  \
+    | |  \/| |_/ / | | | |_/ / | |  \/| |   | | | | | | |
+    | | __ |    /| | | | ___ \ | | __ | |   | | | | | | |
+    | |_\ \| |\ \| |_| | |_/ / | |_\ \| |___| |_| | |/ / 
+     \____/\_| \_|\___/\____/   \____/\_____/\___/|___/  
+                                                        
 
 ```
 
-## Flat Design themes for Grub2.
+## Diseño de GRUB con tema para el Grupo GNU/Linux UNiversidad Distrital.
 
-## Install
+## Instalar
 
-Usage:  `sudo ./install.sh [OPTIONS...]`
+Uso:  `sudo ./install.sh [OPCIONES...]`
 
-_if no option used the terminal user interface will be show up_
-
-|  OPTIONS:          | description |
+|  OPCIONES:          | Descripcion |
 |:-------------------|:-------------|
-| -b, --boot         | Install grub theme into /boot/grub/themes |
-| -v, --vimix        | Vimix grub theme |
-| -s, --stylish      | Stylish grub theme |
-| -t, --tela         | Tela grub theme |
-| -l, --slaze        | Slaze grub theme |
-| -w, --white        | Install white color icon version |
-| -u, --ultrawide    | Install 2560x1080 background image - not available for slaze theme|
-| -2, --2k           | Install 2k(2560x1440) background image |
-| -4, --4k           | Install 4k(3840x2160) background image |
-| -r, --remove       | Remove theme (must add theme name option) |
-| -h, --help         | Show this help |
+| -b, --boot         | Instalar el tema en  /boot/grub/themes |
+| -v, --vimix        | Tema grub Vimix |
+| -s, --stylish      | Tema grub Stylish |
+| -t, --tela         | Tema grub Tela |
+| -w, --white        | Instalar iconos en version Blanco |
+| -u, --ultrawide    | Instalar imagen de fondo para 2560x1080 |
+| -r, --remove       | Remover un tema (se debe agregar el nombre del tema) |
+| -h, --help         | Mostrar Ayuda |
 
-For example:
+Por ejemplo:
 
-1. Install Tela theme on 2k display device
+1. Instalar tema Tela 
 
-    `sudo ./install.sh -t -2`
+    `sudo ./install.sh -t`
     or
-    `sudo ./install.sh --tela --2k`
+    `sudo ./install.sh --tela`
 
-2. Install Tela theme into /boot/grub/themes
+2. Instalar tema Tela en /boot/grub/themes
 
     `sudo ./install.sh -b -t`
 
-3. Remove Tela theme
+3. Remover Tela theme
 
     `sudo ./install.sh -r -t`
 
-## Display resolution issues
+## Resoluciones
 
-#### Set the right resolution of your display
+#### Configrure la mejor resolución para su PC
 
-On the grub screen, `press c` to get the commandline, and enter `vbeinfo` or `videoinfo` on EFI boot to check what resolutions you can use, then edit `/etc/default/grub` , add your resolution `GRUB_GFXMODE=****x****x32` into it, last you can run `grub-mkconfig -o /boot/grub/grub.cfg` to update your grub.cfg.
+En la pantall del grub , `precione c` para entrar a la linea de comandos, posterior ingrese `vbeinfo` o `videoinfo` en EFI boot para revisar que resoluciones puede utilizar, despues edite `/etc/default/grub` , añada la resolución `GRUB_GFXMODE=****x****x32` en el archivo, por ultimo ejecutar `grub-mkconfig -o /boot/grub/grub.cfg` para actualizar el grub.cfg.
 
-## Screenshots
+## Capturas de Pantalla
 
-### Vimix grub theme
+### Tema grub Vimix
 
 ![vimix grub theme](screenshots/grub-theme-vimix.jpg?raw=true)
 
-### Stylish grub theme
+### Tema grub Stylish
 
 ![Stylish grub theme](screenshots/grub-theme-stylish.jpg?raw=true)
 
-### Tela grub theme
+### Tema grub Tela 
 
 ![Tela grub theme](screenshots/grub-theme-tela.jpg?raw=true)
-
-### Slaze grub theme
-
-![Slaze grub theme](screenshots/grub-theme-slaze.jpg?raw=true)

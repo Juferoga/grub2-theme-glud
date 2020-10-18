@@ -9,7 +9,7 @@
 
 ```
 
-## Diseño de GRUB con tema para el Grupo GNU/Linux UNiversidad Distrital.
+## Diseño de GRUB con tema para el Grupo GNU/Linux Universidad Distrital.
 
 ## Instalar
 
@@ -46,7 +46,7 @@ Por ejemplo:
 
 #### Configrure la mejor resolución para su PC
 
-En la pantall del grub , `precione c` para entrar a la linea de comandos, posterior ingrese `vbeinfo` o `videoinfo` en EFI boot para revisar que resoluciones puede utilizar, despues edite `/etc/default/grub` , añada la resolución `GRUB_GFXMODE=****x****x32` en el archivo, por ultimo ejecutar `grub-mkconfig -o /boot/grub/grub.cfg` para actualizar el grub.cfg.
+En la pantall del grub , `presione c` para entrar a la linea de comandos, posterior ingrese `vbeinfo` o `videoinfo` en EFI boot para revisar que resoluciones puede utilizar, despues edite `/etc/default/grub` , añada la resolución `GRUB_GFXMODE=****x****x32` en el archivo, por ultimo ejecutar `grub-mkconfig -o /boot/grub/grub.cfg` para actualizar el grub.cfg.
 
 ## Capturas de Pantalla
 
